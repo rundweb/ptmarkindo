@@ -16,7 +16,9 @@
   list-style: none;
   text-decoration: none;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
+
 
 /* navbar */
 .navbar {
@@ -140,6 +142,7 @@
     border-radius: 6px;
     line-height: 40px;
     transition: all ease .5s;
+    width: fit-content;
 }
 
 .btn-about:hover{
@@ -189,3 +192,66 @@
     color: var(--color-white);
     font-weight: 500;
 }
+
+.about{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.about-content{
+  padding: 25px;
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+  gap: 60px;
+  align-items: center;
+}
+
+.about-us{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-us h1{
+  color: var(--color-orange);
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.about-us h2{
+  color: var(--color-blackblue);
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 52px;
+}
+
+.about-us h3{
+  color: var(--color-grey-secondary);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: justify;
+  letter-spacing: .3px;
+  margin-bottom: 20px;
+}
+
+.about-us img{
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.about-us h4{
+  color: var(--color-grey-secondary);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: justify;
+  letter-spacing: .3px;
+  margin :20px 0 ;
+}
+
