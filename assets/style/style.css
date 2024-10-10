@@ -143,6 +143,7 @@
     line-height: 40px;
     transition: all ease .5s;
     width: fit-content;
+    border: 2px solid var(--color-orange);
 }
 
 .btn-about:hover{
@@ -241,11 +242,6 @@
   margin-bottom: 20px;
 }
 
-.about-us img{
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-}
-
 .about-us h4{
   color: var(--color-grey-secondary);
   font-weight: 500;
@@ -255,3 +251,122 @@
   margin :20px 0 ;
 }
 
+.about-img{
+  overflow: hidden;
+  border-radius: 40px;
+  position: relative;
+  width: 100%;  /* Sesuaikan ukuran gambar */
+  height: 300px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Menjaga proporsi gambar */
+  transition: transform 0.5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-img:hover img{
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* product */
+.product{
+  background-color: var(--color-blackblue);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.product-content{
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.product-text{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.product-text h1{
+  color: var(--color-orange);
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: .5px;
+}
+
+.product-text h2{
+  color: var(--color-white);
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.product-list{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.product-link{
+  max-width: 360px;
+  height: 480px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-img{
+  overflow: hidden;
+}
+
+.product-img img{
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;;
+}
+
+.product-img:hover img{
+  transform: scale(1.2);
+}
+
+.product-list-text{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.product-list-text h1{
+  color: var(--color-blackblue);
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 28px;
+}
+
+.product-list-text h2{
+  color: var(--color-grey-secondary);
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
