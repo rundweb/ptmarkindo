@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* font */
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-inter: "Inter", serif;
+
+  /* color */
+  --color-darkblue: #030f69;
+  --color-blue: #13c5dd;
+  --color-white: #ffffff;
+  --color-grey-light: #a6a3ad;
+  --color-grey: #3e3c3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* navbar */
+
+.navbar {
+  width: 100%;
+  padding: 25px;
+  font-family: var(--font-montserrat);
+  position: fixed;
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex: 1;
+}
+
+.nav-link a {
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 600;
+  transition: all ease 0.5s;
+}
+
+.nav-social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-social a i {
+  color: var(--color-white);
+  font-size: 24px;
+  transition: all ease 0.5s;
+}
+
+.nav-social a i:hover {
+  color: var(--color-blue);
+}
+
+.nav-toggle{
+  position: absolute;
+  right: 25px;
+  z-index: 999;
+}
+
+.nav-toggle i {
+  font-size: 36px;
+  color: var(--color-white);
+}
+
+/* home */
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* responsip */
+
+@media (max-width: 768px) {
+  .nav-list {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    min-height: 100vh;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    flex-direction: column;
+    transition: all ease-in-out .5s;
+
+  }
+
+  .nav-link a {
+    font-size: 20px;
+  }
+  .nav-social{
+    position: absolute;
+    width: 80%;
+    min-height: 100vh;
+    top: -40px;
+    right: -100%;
+    justify-content: center;
+    align-items: flex-end;
+    transition: all ease-in-out .5s; 
+  }
+
+  .nav-social a i{
+    font-size: 32px;
+  }
+
+  i{
+    transition: all ease-in-out .5s;
+  }
+
+  .bx-x{
+    transform: rotate(90deg);
+  }
+
+  .menu-active{
+    right: 0;
+  }
+}
