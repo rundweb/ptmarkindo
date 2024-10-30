@@ -79,6 +79,7 @@
   position: absolute;
   right: 25px;
   z-index: 999;
+  display: none;
 }
 
 .nav-toggle i {
@@ -145,5 +146,9 @@
 
   .menu-active{
     right: 0;
+  }
+
+  .nav-toggle{
+    display: block;
   }
 }
