@@ -246,7 +246,6 @@
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     flex-direction: column;
     transition: all ease-in-out 0.5s;
@@ -254,6 +253,7 @@
 
   .nav-link a {
     font-size: 20px;
+    color: var(--color-blue);
   }
   .nav-social {
     position: absolute;
@@ -268,6 +268,7 @@
 
   .nav-social a i {
     font-size: 32px;
+    color: var(--color-blue);
   }
 
   i {
