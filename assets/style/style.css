@@ -329,8 +329,11 @@
 }
 
 @media (max-width:560px) {
+  .service{
+    margin-top: -130px;
+  }
   .service-content{
-    padding: 30px 20px;
+    padding: 30px 30px;
   }
   .service-link{
     width: 100%;
@@ -340,12 +343,17 @@
   }
 
   .service-icon{
-    width: 60px;
+    width: 30%;
   }
 
   .service-text{
     width: 100%;
   }
+
+  .service-text h1{
+    font-size: 16px;
+  }
+
 }
 
 @media (max-width: 376px) {
