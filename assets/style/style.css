@@ -364,7 +364,7 @@ body {
 }
 
 .product-link {
-  max-width: 400px;
+  max-width: 350px;
   background-color: var(--color-white);
   border-radius: 20px;
   overflow: hidden;
