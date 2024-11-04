@@ -9,12 +9,16 @@ openMenu.addEventListener("click", function () {
   toggleIcon.classList.toggle("bx-x");
 });
 
+
 const scrollMenu = document.querySelector(".navbar");
+const imgResize = document.querySelector('.nav-logo')
 
 window.addEventListener("scroll", function () {
   if (scrollY > 10) {
     scrollMenu.classList.add("nav-scroll");
+    imgResize.classList.add('resize')
   } else {
     scrollMenu.classList.remove("nav-scroll");
+    imgResize.classList.remove('resize')
   }
 });
