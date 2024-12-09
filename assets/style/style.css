@@ -749,11 +749,17 @@ textarea {
 }
 
 .catalog-link {
+  max-width: 400px;
   width: 100%;
   height: 380px;
   background-color: #ffffff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  position: relative;
 }
 
 .catalog-img img {
@@ -810,9 +816,50 @@ textarea {
   color: var(--color-grey);
 }
 
-.btn-buy{
+.btn-buy {
   background-color: var(--color-blue);
   color: var(--color-white);
+}
+
+/* catloh seafood */
+.btn-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btns {
+  font-size: 14px;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 6px;
+  color: var(--color-grey-light);
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.active,
+.btns:hover {
+  background-color: #666;
+  color: white;
+}
+
+.label {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.label h1 {
+  font-family: var(--font-inter);
+  background-color: var(--color-blue);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  /* text-transform: uppercase; */
+  padding: 8px 12px;
+  border-radius: 0px 12px 0px 10px;
 }
 
 /* responsip */
@@ -982,19 +1029,20 @@ textarea {
     height: 200px;
   }
 
-  .catalog-title h2{
+  .catalog-title h2 {
     font-size: 32px;
   }
 
-  .catalog-title h3{
+  .catalog-title h3 {
     width: 100%;
   }
 
-  .catalog-text h1,.catalog-text p{
+  .catalog-text h1,
+  .catalog-text p {
     text-align: center !important;
   }
 
-  .catalog-btn{
+  .catalog-btn {
     justify-content: center;
   }
   .catalog-list {
@@ -1003,8 +1051,6 @@ textarea {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
   }
-
-
 }
 
 @media (max-width: 376px) {
@@ -1026,7 +1072,7 @@ textarea {
   .contact-icon h5 {
     font-size: 14px;
   }
-  .catalog-img img{
+  .catalog-img img {
     height: 160px;
   }
 }
