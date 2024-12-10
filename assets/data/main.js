@@ -164,7 +164,7 @@ var catalogSpices = [
   {
     id: 17,
     label: "Coffee",
-    img: "../assets/images/catalog-coffee/All.png",
+    img: "../assets/images/catalog-coffee/all.png",
     name: "Other Types of Coffee",
     desc: "Rich in protein and omega-3, catfish is healthy, flavorful",
     link: "#",
